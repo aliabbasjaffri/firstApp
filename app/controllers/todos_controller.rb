@@ -1,5 +1,5 @@
 class TodosController < ApplicationController
 	def Index
-		@todo_items = ["Kick ass" , "Study Algo" , "eat dinner"]
+		@todo_items = Todo.all
   	end
 end
