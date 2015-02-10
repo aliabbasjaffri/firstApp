@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'todos/Index'
+
   get 'pages/home'
 
   get 'pages/about'
