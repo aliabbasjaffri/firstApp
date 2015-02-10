@@ -1,13 +1,32 @@
 <title>Todos</title>
 <body>
-	<h1>
-		Todos List
-	</h1>
-	<ul>
-		<% @todo_items.each do |t| %>
-		<li>
-			<%= t.todo_item %>
-		</li>
-		<%end %>
-	</ul>
+	<div class="container">
+  		<div class="row">
+    		<div class="span4">
+				<h1>
+					Todos List
+				</h1>
+
+				<hr>
+
+				<div class="well">
+					<div class="container">
+						<ul>
+							<% @todo_items.each do |t| %>
+							<li>
+								<%= t.todo_item %>
+							</li>
+							<%end %>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+  		<div class="row">	
+			<a href="/todos/delete">Delete Last Todo</a>
+		</div>
+	</div>
 </body>
